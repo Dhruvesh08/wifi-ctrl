@@ -1,5 +1,5 @@
 [package]
-name = "wifi-ctrl"
+name = "mecha-wifi-ctrl"
 version = "0.2.5"
 edition = "2021"
 authors = ["Louis Thiery <thiery.louis@gmail.com>"]
