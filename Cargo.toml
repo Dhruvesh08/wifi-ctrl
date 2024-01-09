@@ -15,11 +15,15 @@ log = { version = "0" }
 serde =  {version = "1", features = ["derive"] }
 thiserror = "1"
 tempfile = "3"
-tokio = { version = "1", default-features = false, features = ["net",  "rt", "sync", "macros", "time"] }
+tokio = { version = "1", features = ["rt-multi-thread", "io-std", "io-util"] }
+env_logger = "0"
+network-interface = "1.1.1"
+wifi-ctrl = "0.2.4"
+futures = "0"
+tokio-util  ={ version = "0", features = ["codec"] }
 
 [dev-dependencies]
 env_logger = "0"
 network-interface = "1"
-tokio = { version = "1", features = ["rt-multi-thread", "io-std", "io-util"] }
-tokio-util  ={ version = "0", features = ["codec"] }
-futures = "0"
+
+
